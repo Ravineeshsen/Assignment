@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+
+<body>
+    <script>
+        // -----------------------------1.function  basics:-----------------------------
+        // a)=>
+        // create a function named calculatesquare that takes a number as an argument and retuns its ssquare.
+
+        // function calculatesquare(a){
+        // let b= a**2;
+        // document.write("a)&nbsp",b,"<br>")
+        // }
+        // calculatesquare(5)
+
+
+        // b)=>
+        //call the function with different numbers and display the results..
+
+        // function numbers(c){
+        //     document.write("b)&nbsp",c)
+        // }
+        // numbers(10)
+
+
+        // -----------------------------2.function parameters and Defaultes :-----------------------------
+
+        //a)=>
+        // Write a function greetUser that takes a name as a parameter  and an optional greeting message.
+        // if the greeting is not provided,use a default message.
+
+        // let a=prompt("enter name of user");
+        // let b=prompt("enter a greet message for the user");
+        // function greetUser(a,b){
+        //     document.write(a,"<br>",b)
+        // }
+        // greetUser(a,b)
+
+        //b)=>
+        // Test the function with and providing a greeting message.
+
+        // let a=prompt("enter the name of user");
+        // function providing(a){
+        //     document.write("welcome to the arvi club.&nbsp",a);
+        // }
+        // providing(a);
+
+
+
+        // -----------------------------3.function scope :-----------------------------
+        // Declare a variable outside a function and another variable with the same
+        // name inside the function. Explore and explain the scope of each variable.
+
+
+        // // Declare a variable outside the function
+
+        // let outsideVariable = "I am a outside variable";
+
+        // function Declarevariable() {
+        //     // Declare a variable with the same name inside the function
+
+        //     let insideVariable = "I am a inside variable";
+
+        //     // Access both variables and log their values
+        //     // document.write("Inside the function:<br>");
+        //    document.write("outsideVariable:", outsideVariable,"<br>"); // Access the global variable
+        //    document.write("insideVariable:", insideVariable,"<br>");   // Access the local variable
+        // }
+
+        // // Call the function
+        // Declarevariable();
+
+        // // Attempt to access the local variable outside the function (will result in an error)
+        // // Also, log the global variable outside the function
+        // document.write("Outside the function:<br>");
+        // document.write("outsideVariable:", outsideVariable,"<br>");  // Access the global variable
+        // document.write("insideVariable:", insideVariable,"<br>");   // Access the local variable
+
+
+
+        // -----------------------------4.Higher-Order Functions :-----------------------------
+
+        // a) Write a higher-order function operateOnNumbers that takes two numbers
+        // and a callback function. The callback function should perform a
+        // mathematical operation (e.g., add, subtract, multiply) on the twonumbers.
+
+        // callback functions for different mathematical operations
+
+        // Addition
+        // function add(x, y) {
+        //   return x + y;
+        // }
+        // let a=add(5,3)
+        // console.log("Addition Result:", a);
+
+
+        // subtract
+        // function subtract(x, y) {
+        //   return x - y;
+        // }
+        // let b=subtract(8,5)
+        // console.log("Subtraction Result:", b);
+
+
+        // multiply
+        // function multiply(x, y) {
+        //   return x * y;
+        // }
+        // let c=multiply(5,4)
+        // console.log("Multiplication Result:", c);
+
+
+        // modulus
+        // function modulus(x,y){
+        //     return x % y;
+        // }
+        // let d= modulus(10,3)
+        // console.log("modulus Result:", d);
+
+
+        // Division
+        // function Division(x,y){
+        //     return x % y;
+        // }
+        // let e= Division(10,4)
+        // console.log("Division Result:", e);
+
+
+        // -----------------------------5.Recursive Function :-----------------------------
+
+        //a) Create a recursive function factorial that calculates the factorial of a given number.
+
+        // let sto = 1;
+        //  function factorial(a){
+        //     for(let i=1;i<=a;i++){
+        //     sto = sto*i
+        //     }
+        //     document.write(sto)
+        //  }
+        //  factorial(8);
+
+        //b) Test the function with various input values.
+        //   let sto = 1;
+        //   function factorial(a){
+        //      for(let i=1;i<=a;i++){
+        //     sto = sto*i
+        //      }
+        //      document.write(sto)
+        //   }
+        //   factorial(8);       //Factorial of 8 is: 40320
+        //   factorial(7);       //Factorial of 7 is: 5040
+        //   factorial(6);       //Factorial of 6 is: 720
+        //   Factorial(5);     //Factorial of 5 is: 120
+        //   factorial(4);       //Factorial of 4 is:24
+
+
+        // -----------------------------6.Closures: :-----------------------------
+
+        //a) Define a function counter that returns a function. The returned function,
+        // when called, should increment a counter variable.
+
+
+
+        // b) Create two instances of the counter function and observe the behavior of
+        // the counter variables.
+
+
+        // -----------------------------7.Callback Functions :-----------------------------
+        //a) Write a function processArray that takes an array and a callback
+        //function. Apply the callback function to each element of the array.
+
+
+        //b) Test it with an array and a callback function that squares each element.
+
+        // function squares(s) {
+        //     return s * s
+        // }
+        // let a = squares[2, 5, 6, 3];
+        // document.write(a)
+
+        // -----------------------------8.Arrow Function :-----------------------------
+
+        // a) Convert the calculateSquare function from question 1 into an arrow function.....
+
+        // let call = (tn) => {
+        //     let a = tn ** 2
+        //     console.log(a)
+        // }
+        // call(5)
+
+        // b) Compare the syntax and behavior with the original function....
+
+        // * Arrow function:-  This works only if the function has only one statement.
+
+
+
+        // -----------------------------9.Array Basics and Array Method :-----------------------------
+        // a) Create an array with the names of your favorite colors....
+        // let a = ["Pink", "Black", "Yellow", "blue"];
+
+        // b) Display the second color in the array.....
+        // console.log(a[1]);
+
+        // c) Use the push method to add a new color to the array from question 1....
+        // let b = a.push("Green");
+        // console.log(a);
+
+
+        // d) Use the pop method to remove the last color from the array....
+        // console.log(a.pop());
+
+        // -----------------------------10.Array Iteration :-----------------------------
+
+        // a) Write a function filterNumbers that takes an array of mixed data types
+        //    and returns a new array containing only the numbers.....
+        // b) Test the function with an array of mixed data.....
+
+        // let a = ["ram",123,"king",15.33,true,65,"kishan",786];
+        // function filterNumbers(a){
+        //     let n = []
+        //     for(let i=0; i<a.length; i++){
+        //         if(typeof(a[i])==="number"){
+        //             n.push(a[i])
+        //         }
+        //     }
+        //     console.log(n)
+        // }
+        // filterNumbers(a)
+
+        // -----------------------------11.Array Sorting :-----------------------------
+        // a) Create an array of words and use the sort method to sort them alphabetically
+        // let a = ["a", "f", "b", "e", "c", "d"];
+
+        // b) Display the sorted array.....
+
+        // console.log(a.sort());
+
+
+        // -----------------------------12.Array Manipulation :-----------------------------
+
+        // a) Write a function reverseArray that takes an array and returns a new
+        //     array with its elements in reverse order....
+
+        // let b = ["a","r","h","e","s","d"];
+        // console.log(b.reverse());
+
+
+        // b) Test the function with different arrays.....
+
+        // let a = [1, 3, 63, 34, 86, 32]
+        // function difreve(a) {
+        //     let b = []
+        //     b = a.reverse(a)
+        //    document.write(b)
+        // }
+        // difreve(a)
+
+        // -----------------------------13. Array Mapping :-----------------------------
+        //  a) Write a function doubleNumbers that takes an array of numbers and
+        //     returns a new array with each number doubled.....
+        //  b) Test the function with an array of numbers.....
+
+        // let a = [1, 22, 53, 44, 89, 22, 44, 55];
+
+        // function doubleNumbers(a) {
+        //     var n = [];
+        //     for (let i = 0; i < a.length; i++) {
+        //         for (let j = 0; j < a.length; j++) {
+        //             if (a[i] == a[j] && i != j) {
+        //                 n.push(a[j])
+        //             }
+        //         }
+        //     }
+        //     console.log(n)
+        // }
+        // doubleNumbers(a)
+
+        // -----------------------------14. Array Reducing :-----------------------------
+        // a) Write a function sumArray that takes an array of numbers and returns the
+        //   sum of all the numbers....
+        // b) Test the function with an array of numbers....
+
+        // let a = [1, 3, 5, 8, 4, 2, 10];
+        // function sumArray(a) {
+        //     let sum = 0;
+        //     for (let i = 0; i < a.length; i++) {
+        //         sum += a[i]
+        //     }
+        //     console.log(sum)
+        // }
+        // sumArray(a)
+
+
+        // -----------------------------15. Array Searching :-----------------------------
+
+        // a) Write a function findElement that takes an array and a target element.
+        //  Return true if the element is found, and false otherwise.....
+        // b) Test the function with different arrays and target elements.....
+
+        // let a = ["ps", "kishan", "aman", "abhi","ankit"];
+        // let b = prompt("Enter the Value for check's Element")
+        // function findElement(a) {
+        //     for (let i = 0; i < a.length; i++) {
+        //         if (a[i] == b) {
+        //             console.log("True");
+        //         }
+        //          else {
+        //              console.log("False");
+        //          }
+        //         break
+        //     }
+        // }
+        // findElement(a)
+
+
+        // -----------------------------16. Array Splicing :-----------------------------
+        // a) Create an array of fruits.....
+        let a = ["mango","kiwi","orange","banana","papaya","blackberries"];
+
+        // b) Use the splice method to remove two elements from the middle of the
+        //    array and replace them with two different fruits.....
+        let middle = a.length/2;
+        a.splice(middle-1,2,"pineapple","apple")
+
+        // c) Display the modified array.....
+
+         document.write(a)
+
+
+
+
+
+
+
+
+
+
+        //  These are the names of those topics which are not made of me.
+        // 1.Closures:
+        // 2.Callback Functions:
+        // 3.Object Methods:
+        // 4.Function Composition:
+        // 6.Multidimensional Array:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
